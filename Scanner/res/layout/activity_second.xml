@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_my_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        ></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/iv_flash"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#f3fbf8"
+            android:textSize="12sp"
+            android:text="@string/tv_tips"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_gallery"
+            android:layout_toStartOf="@+id/iv_gallery"
+            android:layout_toRightOf="@+id/iv_flash"
+            android:layout_toEndOf="@+id/iv_flash" />
+        <ImageView
+            android:id="@+id/iv_gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_launcher"/>
+    </RelativeLayout>
+
+</FrameLayout>
